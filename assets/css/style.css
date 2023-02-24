@@ -1,0 +1,30 @@
+body {
+  display:flex;
+  flex-direction: column;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  /* nav bar goes all the way to the right */
+  background-color: aquamarine;
+}
+
+main {
+  flex-grow: 1;
+  /* makes this section take up as much space as it can. */
+  display: flex;
+  /* it has to be a flex container as well. */
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section {
+  display: flex;
+  /* we want it to be row so we leave it as is by default. */
+}
+.hero {
+  height: 200px;
+  background-color: blue;
+  /* add background image that fits the size */
+}
