@@ -1,0 +1,58 @@
+header {
+  /* check if needed */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* nav bar goes all the way to the right */
+  background-color: rgb(99, 188, 180);
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+  /* padding: 1%; */
+  row-gap: 5px;
+} 
+
+h1 {
+  font-size: 70px;
+}
+
+
+nav ul {
+  display: flex;
+  font-size: 30px;
+  justify-items: space-between;
+  column-gap: 30px;
+
+  
+  /* min-width: 400px; */
+  
+  /* why not spacing ??????? */
+
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;  
+  
+
+
+}
+
+nav li {
+  list-style-type: none;
+  
+}
+
+nav a:hover {
+  color: aquamarine;
+}
+
+nav a:active {
+  color:rgb(201, 119, 119);
+}
+
+@media screen and (max-width: 768px) {
+  nav ul { 
+    flex-direction: column;
+  }
+}

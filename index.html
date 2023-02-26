@@ -7,6 +7,8 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+
 
 </head>
 
@@ -14,12 +16,17 @@
 <body>
   <header>
     <h1>Ester</h1>
+    <!-- <img src="./assets/css/images/headshot portfolio.png" class="Profile-Picture" alt="Profile Picture"> -->
+
     <nav>
-      <a>About me</a>
-      <a>Work</a>
-      <a>Contact</a>
-      <a>Resume PDF</a>
+      <ul>
+        <li><a href="#AboutMe">About me</a></li>
+        <li><a href="#Work">Work</a></li>
+        <li><a href="#ContactMe">Contact</a></li>
+        <li><a href="#ResumePDF">Resume PDF</a></li>
+      </ul>
     </nav>
+    
   </header>
 
   <div class="hero">
@@ -28,29 +35,60 @@
 
   <main>
 
-    <section>
-      <h2>About Me</h2>
+    <section class="AboutMe" id="AboutMe">
+      <h2 class="side-border">About Me</h2>
       <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolore vero, quae nobis cupiditate error nostrum sint excepturi corporis. Rem, totam! Qui laborum quia magni ipsum enim voluptate assumenda reprehenderit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolore vero, quae nobis cupiditate error nostrum sint excepturi corporis. Rem, totam! Qui laborum quia magni ipsum enim voluptate assumenda reprehenderit.</p>
       </div>
     </section>
 
-    <section>
-      <h2>Work</h2>
-      <div>
-        5 divs here
-      </div>
+    <section class="Work" id="Work">
+      <h2 class="side-border">Work</h2>
+        <div class="Picture-Structure">
+          <div class="Picture-Text-Work"> 
+            <img src="./assets/css/images/data-streams-1633769.jpg" class="Surf-Report" alt="Surf Report">
+            <div class="PositionOfTextOnImages"> Surf Report </div>
+          </div>
+
+          <div class="Picture-Text-Work"> 
+            <img src="./assets/css/images/programming-1962938.jpg" alt="LED Wall">
+            <div class="PositionOfTextOnImages"> LED Wall</div>
+          </div>
+
+          <div class="Picture-Text-Work"> 
+            <img src="./assets/css/images/i-o-session-ii-lost-bits-4-1242064.jpg" alt="Pastel Puzzles">
+            <div class="PositionOfTextOnImages">Pastel Puzzles</div>
+          </div>
+
+          <div class="Picture-Text-Work"> 
+            <img src="./assets/css/images/keyboard-with-sphere-1241564.jpg" alt="Calculator">
+            <div class="PositionOfTextOnImages">Calculator</div>
+          </div>
+
+          <div class="Picture-Text-Work"> 
+            <img src="./assets/css/images/hard-drive-2-1241603.jpg" alt="Run-Buddy">
+          <div class="PositionOfTextOnImages">Run Buddy</div>
+          
+        </div>
+
     </section>
 
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        contact info here
+    <section class="ContactMe" id="ContactMe">
+      <h2 class="side-border">Contact Me</h2>
+      <div class=>
+        <p>555 555 5555</p>
+        <p>ester.p18@hotmail.com</p>
+        <p>
+          <a rel="GitHub" href="https://github.com/EFP18"> Github </a>
+        </p>
       </div>
     </section>
 
   </main>
 
+  <footer> 
+    Thank you! 
+  </footer>
 </body>
 </html>

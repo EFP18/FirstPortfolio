@@ -1,14 +1,17 @@
+/* general */
+
+
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
+  /* check flex-dir */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+  /* width: 100%; */
+
 }
 
-header {
-  display:flex;
-  justify-content: space-between;
-  /* nav bar goes all the way to the right */
-  background-color: aquamarine;
-}
+
 
 main {
   flex-grow: 1;
@@ -16,15 +19,182 @@ main {
   display: flex;
   /* it has to be a flex container as well. */
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  border-right: 100px solid rgb(236, 229, 229);
+  border-left: 100px solid rgb(236, 229, 229);
+  background-color: rgb(236, 229, 229);
+  /* border shorthand y x axis????? */
 }
+
 
 section {
   display: flex;
   /* we want it to be row so we leave it as is by default. */
+  margin-bottom: 30px;
 }
+
+
+
 .hero {
-  height: 200px;
-  background-color: blue;
+  height:500px;
+  width:100%;
+  background-image: url("../css/images/annie-spratt-OTy0mkqc2Yk-unsplash.jpg");
+  background-color: rgb(113, 113, 179);
+  background-size: cover;
+  background-position: left;
+  border-bottom: 20px solid rgb(236, 229, 229);
   /* add background image that fits the size */
 }
+
+footer {
+  background-color: rgb(99, 188, 180);
+  font-size: 50px;
+  text-align: center;
+}
+/* end general */
+
+
+/* specific elements */
+
+.Profile-Picture {
+  width: 1425;
+  height: 100%;
+}
+
+.AboutMe {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  border-top: 20px solid rgb(236, 229, 229);
+}
+
+.AboutMe div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.Work {
+  display: flex;
+  /* flex-wrap: wrap;   */
+  /* justify-content: space-between; */
+}
+
+.Picture-Structure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.Picture-Text-Work{
+  display: inline-block;
+  position:relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  border: 10px solid rgb(236, 229, 229);
+}
+
+
+.PositionOfTextOnImages {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgb(99, 188, 180);
+}
+
+.Picture-Text-Work img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+img {
+  width: 400px;
+  height: 150px;
+  background-color: rgb(113, 113, 179);
+  border: 5px solid rgb(113, 113, 179);
+}
+
+.Surf-Report {
+  /* display: inline-block; */
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .Surf-Report { 
+    width: 400px;
+    height: 150px;
+    flex-direction: column;
+    /* Surf-report image grows or shrinks for responsiveness. */
+  }
+}
+@media screen and (max-width: 500px) {
+  img, .Surf-Report{
+    width: 120%;
+  }
+}
+
+.ContactMe {
+  display: flex;
+  flex-wrap: wrap;
+  /* do i need the display and wrap in here??????? */
+  justify-content: space-between;
+  /* align-self: center; */
+  /* aligns the text next to the title of each section
+  in the same height */
+  width: 100%;
+}
+
+.ContactMe h2 {
+  display: flex;
+}
+
+.ContactMe div {
+  display: flex;
+  text-decoration: underline;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+  @media screen and (max-width: 768px) {
+    .ContactMe{ 
+      flex-direction: column;
+    }
+}
+
+
+.side-border {
+  display: flex;
+  border-right: 5px solid rgb(97, 97, 143);
+  float: left;
+  margin-right: 50px;
+  align-content: left;
+
+}
+
+@media screen and (max-width: 768px) {
+  .side-border {
+    border-right: none;
+    text-decoration: underline 5px solid rgb(97, 97, 143);
+  }
+}
+
+
+/* a div is a block element, so we want to convert it into inline-block */
+
+
+/* TO DOs
+1. Space between nav bar
+2. Side Border how to put them fixed
+3. Responsiveness
+5. Text on images
+7. Header not going under h1 when shrunk or spaced*/
