@@ -22,11 +22,6 @@ nav ul {
   justify-items: space-between;
   column-gap: 30px;
 
-  
-  /* min-width: 400px; */
-  
-  /* why not spacing ??????? */
-
 }
 
 nav a {
@@ -43,13 +38,13 @@ nav li {
   
 }
 
-nav a:hover {
+/* nav a:hover {
   color: aquamarine;
 }
 
 nav a:active {
   color:rgb(201, 119, 119);
-}
+} */
 
 @media screen and (max-width: 768px) {
   nav ul { 

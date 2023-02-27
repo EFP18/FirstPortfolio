@@ -7,8 +7,8 @@ body {
   /* check flex-dir */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   min-height: 100vh;
-  /* width: 100%; */
-
+  width: 100%;
+  
 }
 
 
@@ -22,9 +22,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-right: 100px solid rgb(236, 229, 229);
-  border-left: 100px solid rgb(236, 229, 229);
+  border-left: 200px solid rgb(236, 229, 229);
   background-color: rgb(236, 229, 229);
-  /* border shorthand y x axis????? */
 }
 
 
@@ -52,14 +51,29 @@ footer {
   font-size: 50px;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+a:active {
+  color:rgb(201, 119, 119);
+}
+
 /* end general */
 
 
 /* specific elements */
 
 .Profile-Picture {
-  width: 1425;
-  height: 100%;
+  width: 40px;
+  height: 50px;
+  border-radius: 30px;
+  vertical-align: middle;
 }
 
 .AboutMe {
@@ -67,43 +81,50 @@ footer {
   /* flex-wrap: wrap; */
   width: 100%;
   border-top: 20px solid rgb(236, 229, 229);
+  justify-content: space-between;
+  /* flex-basis: 50%; */
 }
 
 .AboutMe div {
   display: flex;
   flex-wrap: wrap;
+  /* flex-basis: 50%; */
+
 }
 
 
 .Work {
   display: flex;
   /* flex-wrap: wrap;   */
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  /* flex-basis: 50%; */
 }
 
 .Picture-Structure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* flex-basis: 50%; */
 }
 
 
 .Picture-Text-Work{
-  display: inline-block;
+  /* display: inline-block; */
   position:relative;
   text-align: center;
-  color: white;
-  font-size: 30px;
+  color: black;
+  font-size: 20px;
   border: 10px solid rgb(236, 229, 229);
 }
 
 
 .PositionOfTextOnImages {
-  display: inline-block;
+  /* display: inline-block; */
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 30px;
+  left: 0px;
   background-color: rgb(99, 188, 180);
+  padding: 10px;
 }
 
 .Picture-Text-Work img:hover {
@@ -111,16 +132,22 @@ footer {
   cursor: pointer;
 }
 
+.small-text {
+  font-size: 10px;
+  text-align: left;
+  padding-top:5px;
+}
+
 
 img {
   width: 400px;
   height: 150px;
   background-color: rgb(113, 113, 179);
-  border: 5px solid rgb(113, 113, 179);
+  border: 3px solid rgb(136, 204, 193);
 }
 
 .Surf-Report {
-  /* display: inline-block; */
+  display: inline-block;
   width: 100%;
   height: 400px;
   background-size: contain;
@@ -129,8 +156,8 @@ img {
 @media screen and (max-width: 768px) {
   .Surf-Report { 
     width: 400px;
-    height: 150px;
-    flex-direction: column;
+    height: 300px;
+    /* flex-direction: column; */
     /* Surf-report image grows or shrinks for responsiveness. */
   }
 }
@@ -139,10 +166,18 @@ img {
     width: 120%;
   }
 }
+/* 
+@media screen and (max-width: 500px) {
+  main{
+  border-right: 50px; 
+  border-left: 50px;
+}
+} */
+
 
 .ContactMe {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* do i need the display and wrap in here??????? */
   justify-content: space-between;
   /* align-self: center; */
@@ -151,9 +186,6 @@ img {
   width: 100%;
 }
 
-.ContactMe h2 {
-  display: flex;
-}
 
 .ContactMe div {
   display: flex;
@@ -165,19 +197,22 @@ img {
 
 }
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     .ContactMe{ 
       flex-direction: column;
     }
 }
-
+ */
 
 .side-border {
   display: flex;
-  border-right: 5px solid rgb(97, 97, 143);
+  border-right: 3px solid rgb(97, 97, 143);
   float: left;
-  margin-right: 50px;
+  margin-right: 30px;
   align-content: left;
+  font-size: 50px;
+  /* justify-content: flex-start; */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -189,12 +224,20 @@ img {
 }
 
 
+@media screen and (max-width: 768) {
+  .AboutMe .Work .ContactMe {
+    flex-wrap: wrap;
+  }
+};
+  
+
 /* a div is a block element, so we want to convert it into inline-block */
 
 
 /* TO DOs
-1. Space between nav bar
 2. Side Border how to put them fixed
 3. Responsiveness
 5. Text on images
-7. Header not going under h1 when shrunk or spaced*/
+*/
+
+/* space under about me */
