@@ -17,7 +17,7 @@
   <header>
     <h1>
       Ester Pelosof
-      <img src="./assets/css/images/headshot portfolio.png" class="Profile-Picture" alt="Profile Picture">
+      <img src="./assets/images/headshot portfolio.png" class="Profile-Picture" alt="Profile Picture">
     </h1>
 
     <nav>
@@ -48,53 +48,52 @@
     <section class="Work" id="Work">
 
       <h2 class="side-border">Work</h2>
+      <!-- side-border class is to help add the border line on the side of the page, 
+      to separate the content of work with the title on the side.
+    
+      Picture-Text-Work and PositionOfTextOnImages helps add the titles of each application of my portfolio
+      on top of the picture. -->
 
         <div class="Picture-Structure">
           
-          <div class="Picture-Text-Work"> 
-            <img src="./assets/css/images/data-streams-1633769.jpg" class="Surf-Report" alt="Surf Report">
+          <div class="flex-item" id="img-1"> 
             <div class="PositionOfTextOnImages"> 
               <p>Surf Report</p>
               <p class="small-text">MERN Stack</p>
             </div>
           </div>
 
-          <div class="Picture-Text-Work"> 
-            <img src="./assets/css/images/programming-1962938.jpg" alt="LED Wall">
+          <div class="flex-item" id="img-2"> 
             <div class="PositionOfTextOnImages"> 
               <p>LED Wall</p>
               <p class="small-text">Node/IoT</p>
             </div>
           </div>
 
-          <div class="Picture-Text-Work"> 
-            <img src="./assets/css/images/i-o-session-ii-lost-bits-4-1242064.jpg" alt="Pastel Puzzles">
+          <div class="flex-item" id="img-3"> 
             <div class="PositionOfTextOnImages">
               <p>Pastel Puzzles</p>
               <p class="small-text">MERN Stack</p>
             </div>
           </div>
 
-          <div class="Picture-Text-Work"> 
-            <img src="./assets/css/images/keyboard-with-sphere-1241564.jpg" alt="Calculator">
+          <div class="flex-item" id="img-4"> 
             <div class="PositionOfTextOnImages">
               <p>Calculator</p>
               <p class="small-text"> React/JavaScript/CSS</p>
             </div>
           </div>
 
-          <div class="Picture-Text-Work"> 
-            <img src="./assets/css/images/hard-drive-2-1241603.jpg" alt="Run-Buddy">
-          <div class="PositionOfTextOnImages">
-            <p>
-              <a href="https://github.com/EFP18/code-refactor">
-                Run Buddy
-              </a>
-            </p>
-            <p class="small-text">HTML/CSS</p>
+          <div class="flex-item" id="img-5"> 
+            <div class="PositionOfTextOnImages">
+              <p>
+                <a href="https://github.com/EFP18/code-refactor">
+                  Run Buddy
+                </a>
+              </p>
+              <p class="small-text">HTML/CSS</p>
+            </div> 
           </div>
-
-        </div>
 
     </section>
 
@@ -106,6 +105,7 @@
           <a href=mailto:"ester.p18@hotmail.com">
             ester.p18@hotmail.com
           </a>
+    <!-- added mailto for in contact me -->
         </p>
         <p>
           <a rel="GitHub" href="https://github.com/EFP18"> Github </a>
@@ -126,3 +126,7 @@
   </footer>
 </body>
 </html>
+
+
+<!-- responsive middle screen
+ -->

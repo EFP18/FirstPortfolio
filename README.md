@@ -1,7 +1,24 @@
 # Portfolio
 
-
 # 02 Advanced CSS: Portfolio
+
+This assignment required the creation of a Portfolio, in which I can showcase the work I've done throughout this course and in my future career as a Web Developer. 
+
+In order to achieve this, I had to create a code with the following layout:
+
+- HEADER
+- MAIN PART WITH APPLICATIONS
+- A CONTACT ME SECTION
+
+I created a responsive webpage that will adjust to any screen and or device using Flexbox and the help of media queries. 
+
+I put links in the header so that when the user clicks on something, he will be directed to the correct place in the page. 
+
+I also added my challenge 1, code-refactor, in the list of my applications, with a link to it. 
+
+The contact me section has a mailto link so that someone can contact me directly from the website. 
+
+
 
 ## Your Task
 

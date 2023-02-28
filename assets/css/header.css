@@ -1,34 +1,37 @@
 header {
-  /* check if needed */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   /* nav bar goes all the way to the right */
-  background-color: rgb(99, 188, 180);
-  font-family: 'Times New Roman', Times, serif;
+  background-color: var(--redish);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   align-items: center;
   /* padding: 1%; */
-  row-gap: 5px;
+  color: var(--letter-gray);
 } 
 
 h1 {
   font-size: 70px;
+  padding-left: 20px;
 }
 
 
 nav ul {
   display: flex;
   font-size: 30px;
-  justify-items: space-between;
-  column-gap: 30px;
+  /* justify-items: space-between; */
+  /* column-gap: 30px; */
 
 }
 
 nav a {
   font-weight: bold;
   text-decoration: none;
-  color: black;  
-  
+  color: var(--letter-gray);  
+  padding-right:20px;
+  padding-left: 20px;
+  /* padding-left on nav a helps align the letters vertically with h1
+  when in small screen. */
 
 
 }
@@ -37,14 +40,6 @@ nav li {
   list-style-type: none;
   
 }
-
-/* nav a:hover {
-  color: aquamarine;
-}
-
-nav a:active {
-  color:rgb(201, 119, 119);
-} */
 
 @media screen and (max-width: 768px) {
   nav ul { 

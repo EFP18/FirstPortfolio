@@ -1,14 +1,24 @@
 /* general */
 
+*{ 
+  --beige: rgb(247, 240, 237);
+  --redish: rgb(146, 106, 106);
+  --letter-gray: rgb(60, 62, 62);
+  --blueish: rgb(86, 106, 119);
+  
+
+
+}
+
 
 body {
   display: flex;
   flex-direction: column;
   /* check flex-dir */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  min-height: 100vh;
-  width: 100%;
-  
+  /* min-height: 100vh; */
+  /* width: 100%; */
+  box-sizing: border-box;
 }
 
 
@@ -21,9 +31,8 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-right: 100px solid rgb(236, 229, 229);
-  border-left: 200px solid rgb(236, 229, 229);
-  background-color: rgb(236, 229, 229);
+  background-color: var(--beige);
+  color: var(--letter-gray);
 }
 
 
@@ -37,17 +46,18 @@ section {
 
 .hero {
   height:500px;
-  width:100%;
-  background-image: url("../css/images/annie-spratt-OTy0mkqc2Yk-unsplash.jpg");
-  background-color: rgb(113, 113, 179);
+  /* width:100%; */
+  background-image: url("../images/annie-spratt-OTy0mkqc2Yk-unsplash.jpg");
+  background-color: var(--redish);
   background-size: cover;
   background-position: left;
-  border-bottom: 20px solid rgb(236, 229, 229);
+  border-bottom: 20px solid var(--beige);
   /* add background image that fits the size */
 }
 
 footer {
-  background-color: rgb(99, 188, 180);
+  background-color: var(--redish);
+  color: var(--letter-gray);
   font-size: 50px;
   text-align: center;
 }
@@ -57,11 +67,11 @@ a {
 }
 
 a:hover {
-  color: aquamarine;
+  color: var(--beige);
 }
 
 a:active {
-  color:rgb(201, 119, 119);
+  color:var(--beige);
 }
 
 /* end general */
@@ -73,15 +83,15 @@ a:active {
   width: 40px;
   height: 50px;
   border-radius: 30px;
-  vertical-align: middle;
+  vertical-align: center;
 }
 
 .AboutMe {
   display: flex;
-  /* flex-wrap: wrap; */
-  width: 100%;
-  border-top: 20px solid rgb(236, 229, 229);
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  /* padding: 20px; */
+  /* justify-content: space-between; */
   /* flex-basis: 50%; */
 }
 
@@ -89,48 +99,58 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   /* flex-basis: 50%; */
+  flex: 4;
 
 }
 
 
 .Work {
   display: flex;
-  /* flex-wrap: wrap;   */
+  flex-wrap: wrap;  
   justify-content: space-between;
+  align-items: stretch;
   /* flex-basis: 50%; */
 }
 
 .Picture-Structure {
+  flex: 0 0 77%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* flex-basis: 50%; */
+  justify-content: center;
 }
 
 
-.Picture-Text-Work{
-  /* display: inline-block; */
-  position:relative;
-  text-align: center;
-  color: black;
-  font-size: 20px;
-  border: 10px solid rgb(236, 229, 229);
+.flex-item {
+  min-width: 250px;
+  min-height: 250px;
+  flex-basis: calc(50% - 1rem);
+  margin: .5rem;
+  position: relative;
 }
-
 
 .PositionOfTextOnImages {
-  /* display: inline-block; */
   position: absolute;
   bottom: 30px;
   left: 0px;
-  background-color: rgb(99, 188, 180);
+  background-color: var(--redish);
   padding: 10px;
+
+  /* Position absolute so that the text can stay in one place in relation to the image, w
+  which has position relative in Picture-Text-Work. */
 }
 
-.Picture-Text-Work img:hover {
-  opacity: 0.5;
+.flex-item:hover {
+  opacity: 0.8;
   cursor: pointer;
+  /*  When visitor hovers over images, they change opacity 
+  and have a pointer to click on them. */
 }
+
+.PositionOfTextOnImages:hover {
+  background-color: var(--blueish);
+  color: rgb(30, 21, 21);
+}
+
 
 .small-text {
   font-size: 10px;
@@ -139,33 +159,15 @@ a:active {
 }
 
 
-img {
+/* img {
   width: 400px;
   height: 150px;
   background-color: rgb(113, 113, 179);
   border: 3px solid rgb(136, 204, 193);
-}
 
-.Surf-Report {
-  display: inline-block;
-  width: 100%;
-  height: 400px;
-  background-size: contain;
-}
+} */
 
-@media screen and (max-width: 768px) {
-  .Surf-Report { 
-    width: 400px;
-    height: 300px;
-    /* flex-direction: column; */
-    /* Surf-report image grows or shrinks for responsiveness. */
-  }
-}
-@media screen and (max-width: 500px) {
-  img, .Surf-Report{
-    width: 120%;
-  }
-}
+
 /* 
 @media screen and (max-width: 500px) {
   main{
@@ -177,67 +179,120 @@ img {
 
 .ContactMe {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* do i need the display and wrap in here??????? */
-  justify-content: space-between;
-  /* align-self: center; */
-  /* aligns the text next to the title of each section
-  in the same height */
-  width: 100%;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  
+  /* width: 100%; */
 }
 
 
 .ContactMe div {
+  flex:4;
   display: flex;
   text-decoration: underline;
   flex-wrap: wrap;
-  column-gap: 50px;
+  column-gap: 30px;
   font-size: 20px;
-  text-align: center;
+  align-items: center;
+  /* aligns the text next to the title of each section
+  in the same height */
 
 }
 
-  /* @media screen and (max-width: 768px) {
-    .ContactMe{ 
-      flex-direction: column;
-    }
-}
- */
-
-.side-border {
-  display: flex;
-  border-right: 3px solid rgb(97, 97, 143);
-  float: left;
-  margin-right: 30px;
-  align-content: left;
-  font-size: 50px;
-  /* justify-content: flex-start; */
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-@media screen and (max-width: 768px) {
-  .side-border {
-    border-right: none;
-    text-decoration: underline 5px solid rgb(97, 97, 143);
-  }
-}
-
-
-@media screen and (max-width: 768) {
-  .AboutMe .Work .ContactMe {
-    flex-wrap: wrap;
-  }
-};
   
+.side-border {
+  /* display: flex; */
+  /* flex: 1; */
+  border-right: 3px solid var(--blueish);
+  margin-right: 30px;
+  text-align: right;
+  font-size: 50px;
+  flex-basis: 20%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-/* a div is a block element, so we want to convert it into inline-block */
+.ResumePDF div {
+  flex: 4;
+}
 
 
-/* TO DOs
-2. Side Border how to put them fixed
-3. Responsiveness
-5. Text on images
-*/
+#img-1 {
+  min-height: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/data-streams-1633769.jpg");
+  background-position: center;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  
+}
 
-/* space under about me */
+#img-2 {
+  background-image: url("../images/programming-1962938.jpg");
+  background-size: 100%;
+  width: 100%;
+}
+
+#img-3 {
+  background-image: url("../images/i-o-session-ii-lost-bits-4-1242064.jpg");
+  background-size: 100%;
+}
+
+#img-4 {
+  background-image: url("../images/keyboard-with-sphere-1241564.jpg");
+  background-size: 100%;
+}
+
+#img-5 {
+  background-image: url("../images/binary-code-3-1241802.jpg");
+  background-size: 100%;
+}
+
+
+  @media screen and (max-width: 768px) {
+
+    .side-border {
+      border-right: none;
+      text-decoration: underline 5px solid var(--blueish);
+    }
+  
+    .AboutMe, .Work, .ContactMe, .ResumePDF {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .flex-item {
+      flex-basis: 100%;
+    }
+    
+    #img-1 {
+      min-width: 250px;
+      min-height: 250px;
+    
+    }
+  }
+  
+@media screen and (max-width: 500px) {
+  img{
+    width: 100%;
+  }
+
+  .ContactMe div{ 
+    flex-direction: column;
+    align-items: start;
+
+  }
+
+}
+
+/* @media screen and (max-width: 1080) {
+  .flex-item {
+    align-items: flex-end;
+  } 
+
+  .work h2 {
+    color: blue;
+  }
+  
+} */
+
