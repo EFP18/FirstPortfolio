@@ -2,6 +2,14 @@
 
 # 02 Advanced CSS: Portfolio
 
+Link to page: https://efp18.github.io/Portfolio/
+
+![Screenshots of page: #1](./assets/images/Portfolio-1.jpg)
+![#2](./assets/images/Portfolio-2.jpg)!
+[#3](./assets/images/Portfolio-3.jpg)
+
+
+
 This assignment required the creation of a Portfolio, in which I can showcase the work I've done throughout this course and in my future career as a Web Developer. 
 
 In order to achieve this, I had to create a code with the following layout:
@@ -17,6 +25,10 @@ I put links in the header so that when the user clicks on something, he will be 
 I also added my challenge 1, code-refactor, in the list of my applications, with a link to it. 
 
 The contact me section has a mailto link so that someone can contact me directly from the website. 
+
+
+The page is responsive and accessible, uses background images.
+
 
 
 
