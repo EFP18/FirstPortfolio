@@ -1,132 +1,45 @@
-# Portfolio
+# Portfolio 
+A presentation of my work as a Web Developer
 
-# 02 Advanced CSS: Portfolio
+# 02 Advanced CSS Challenge
 
 Link to page: https://efp18.github.io/Portfolio/
 
 ![Screenshots of page: #1](./assets/images/Portfolio-1.jpg)
-![#2](./assets/images/Portfolio-2.jpg)!
-[#3](./assets/images/Portfolio-3.jpg)
+![#2](./assets/images/Portfolio-2.jpg)
+![#3](./assets/images/Portfolio-3.jpg)
+
+
+# Description
+This project presents my Portfolio, a place where I can present 
+my knowledge and abilities. It is a responsive website that works well both for larger screens in Computers, as well as in mobile phone screens. To achieve this, I used media-queries and flexbox. 
+
+Flexbox was my biggest challenge, and I hope I can work with it again
+to practice what I implemented in the creation of this project, and more. 
+
+A challenge I faced was making the screen responsive between 768 px and 1080 px, in which some features weren't behaving as wanted and or expected. 
+
+
+My code and my page have the following layout:
+
+- Header and navigation bar
+  - Header has a profile picture.
+  - Navigation bar jumps to the right section when clicking on elements.
+
+- Main section of the code includes:
+  - A section with information about me. 
+  - A section with links of my previously done work and applications, which currently only includes my code-refactor challenge. 
+  - A contact me section with a mailto link behind my email address 
+  for easy and fast communication. 
 
 
 
-This assignment required the creation of a Portfolio, in which I can showcase the work I've done throughout this course and in my future career as a Web Developer. 
-
-In order to achieve this, I had to create a code with the following layout:
-
-- HEADER
-- MAIN PART WITH APPLICATIONS
-- A CONTACT ME SECTION
-
-I created a responsive webpage that will adjust to any screen and or device using Flexbox and the help of media queries. 
-
-I put links in the header so that when the user clicks on something, he will be directed to the correct place in the page. 
-
-I also added my challenge 1, code-refactor, in the list of my applications, with a link to it. 
-
-The contact me section has a mailto link so that someone can contact me directly from the website. 
 
 
-The page is responsive and accessible, uses background images.
-
-
-
-
-## Your Task
-
-Welcome to this week's Challenge! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
-
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies. 
-
-With these points in mind, in this Challenge you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you will use during your job search. It’s a win-win that you'll likely be grateful for in the future!
-
-**Note:** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
-
-Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first Challenge, we follow the AS AN / I WANT / SO THAT format. 
-
-
-## User Story
-
-```
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-```
-
-
-## Acceptance Criteria
-
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
-
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-<!-- THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -->
-<!-- WHEN I click one of the links in the navigation -->
-<!-- THEN the UI scrolls to the corresponding section -->
-<!-- WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications -->
-<!-- WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications -->
-<!-- THEN I am taken to that deployed application -->
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-```
-
-
-## Mock-Up
-
-The following animation shows the web application's appearance and functionality:
-
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
-
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
 
 ### Deployment: 32%
 
-* Application deployed at live URL.
 
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description, screenshot, link to deployed application.
-
-## Review
 
 You are required to submit BOTH of the following for review:
 

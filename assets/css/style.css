@@ -6,18 +6,15 @@
   --letter-gray: rgb(60, 62, 62);
   --blueish: rgb(86, 106, 119);
   
-
-
 }
+/* added variables to use same colors multiple times.  */
 
 
 body {
   display: flex;
   flex-direction: column;
-  /* check flex-dir */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* min-height: 100vh; */
-  /* width: 100%; */
+
   box-sizing: border-box;
 }
 
@@ -89,10 +86,6 @@ a:active {
 .AboutMe {
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
-  /* padding: 20px; */
-  /* justify-content: space-between; */
-  /* flex-basis: 50%; */
 }
 
 .AboutMe div {
@@ -159,24 +152,6 @@ a:active {
 }
 
 
-/* img {
-  width: 400px;
-  height: 150px;
-  background-color: rgb(113, 113, 179);
-  border: 3px solid rgb(136, 204, 193);
-
-} */
-
-
-/* 
-@media screen and (max-width: 500px) {
-  main{
-  border-right: 50px; 
-  border-left: 50px;
-}
-} */
-
-
 .ContactMe {
   display: flex;
   flex-wrap: wrap;
@@ -212,9 +187,12 @@ a:active {
 }
 
 .ResumePDF div {
-  flex: 4;
+  flex: 4; 
 }
 
+/* Side border has a flex of 1 to have that much space of the screen at all times, 
+while the rest of the page has a flex of 4 to take up the rest of the space. 
+These two section are separated by the border-right found in the class of side-border. */
 
 #img-1 {
   min-height: 400px;
@@ -248,7 +226,7 @@ a:active {
 }
 
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1080px) {
 
     .side-border {
       border-right: none;
@@ -271,6 +249,7 @@ a:active {
     
     }
   }
+  /* Changing the layout of the page when screen is smaller. Using two different sizes to add additional changes when the screen becomes as small as that of a mobile. */
   
 @media screen and (max-width: 500px) {
   img{
@@ -284,15 +263,4 @@ a:active {
   }
 
 }
-
-/* @media screen and (max-width: 1080) {
-  .flex-item {
-    align-items: flex-end;
-  } 
-
-  .work h2 {
-    color: blue;
-  }
-  
-} */
 
