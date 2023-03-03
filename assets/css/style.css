@@ -43,7 +43,6 @@ section {
 
 .hero {
   height:500px;
-  /* width:100%; */
   background-image: url("../images/annie-spratt-OTy0mkqc2Yk-unsplash.jpg");
   background-color: var(--redish);
   background-size: cover;
@@ -91,7 +90,6 @@ a:active {
 .AboutMe div {
   display: flex;
   flex-wrap: wrap;
-  /* flex-basis: 50%; */
   flex: 4;
 
 }
@@ -102,7 +100,6 @@ a:active {
   flex-wrap: wrap;  
   justify-content: space-between;
   align-items: stretch;
-  /* flex-basis: 50%; */
 }
 
 .Picture-Structure {
@@ -155,9 +152,7 @@ a:active {
 .ContactMe {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
-  
-  /* width: 100%; */
+
 }
 
 
@@ -171,13 +166,10 @@ a:active {
   align-items: center;
   /* aligns the text next to the title of each section
   in the same height */
-
 }
 
   
 .side-border {
-  /* display: flex; */
-  /* flex: 1; */
   border-right: 3px solid var(--blueish);
   margin-right: 30px;
   text-align: right;
@@ -186,9 +178,18 @@ a:active {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.ResumePDF div {
-  flex: 4; 
+.ResumePDF {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.ResumePDF div {
+  flex: 4;
+  display: flex; 
+  align-items: center;
+  font-size: 20px;
+}
+
 
 /* Side border has a flex of 1 to have that much space of the screen at all times, 
 while the rest of the page has a flex of 4 to take up the rest of the space. 
@@ -198,10 +199,7 @@ These two section are separated by the border-right found in the class of side-b
   min-height: 400px;
   flex-basis: 100%;
   background-image: url("../images/data-streams-1633769.jpg");
-  background-position: center;
-  /* background-size: contain;
-  background-repeat: no-repeat; */
-  
+  background-position: center;  
 }
 
 #img-2 {

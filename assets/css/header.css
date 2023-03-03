@@ -19,9 +19,6 @@ h1 {
 nav ul {
   display: flex;
   font-size: 30px;
-  /* justify-items: space-between; */
-  /* column-gap: 30px; */
-
 }
 
 nav a {
