@@ -1,3 +1,13 @@
+*{ 
+  --beige: rgb(247, 240, 237);
+  --redish: rgb(146, 106, 106);
+  --letter-gray: rgb(60, 62, 62);
+  --blueish: rgb(86, 106, 119);
+  
+}
+/* added variables to use same colors multiple times.  */
+
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -45,15 +55,6 @@ nav li {
 }
 
 /* general */
-
-*{ 
-  --beige: rgb(247, 240, 237);
-  --redish: rgb(146, 106, 106);
-  --letter-gray: rgb(60, 62, 62);
-  --blueish: rgb(86, 106, 119);
-  
-}
-/* added variables to use same colors multiple times.  */
 
 
 body {
